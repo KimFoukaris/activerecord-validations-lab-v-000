@@ -7,9 +7,9 @@ class Post < ActiveRecord::Base
 
   def title_contains_click_bait
     if title.present? && title.include?("Won't Believe")
-      true
-    else
       false
+    else
+      true
     end
   end
 end
